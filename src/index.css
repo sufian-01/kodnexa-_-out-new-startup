@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-800; }
+  html { scroll-behavior: smooth; }
+  body { @apply bg-ink font-body text-slate-200 antialiased; }
+  ::selection { @apply bg-indigo/40 text-white; }
+  :focus-visible { @apply outline-none ring-2 ring-cyan ring-offset-2 ring-offset-ink; }
+}
+@media (prefers-reduced-motion: reduce) { *, ::before, ::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+@layer components {
+  .section-shell { @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10; }
+  .eyebrow { @apply mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/20 bg-indigo-400/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[.16em] text-indigo-200; }
+  .glass { @apply border border-white/10 bg-white/[.035] backdrop-blur-xl; }
+  .gradient-text { @apply bg-gradient-to-r from-indigo-300 via-violet-300 to-cyan-300 bg-clip-text text-transparent; }
+}

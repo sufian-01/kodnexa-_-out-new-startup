@@ -1,0 +1,16 @@
+import hero from './hero/hero-placeholder.svg'
+import service from './services/service-placeholder.svg'
+import flowdesk from './projects/flowdesk-ai-placeholder.svg'
+import campus from './projects/campus-copilot-placeholder.svg'
+import signal from './projects/signal-engine-placeholder.svg'
+import hackathon from './hackathons/hackathon-banner-placeholder.svg'
+import founder from './team/founder-placeholder.svg'
+import mentor from './team/mentor-placeholder.svg'
+import judge from './team/judge-placeholder.svg'
+import testimonial from './testimonials/testimonial-placeholder.svg'
+import clientLogo from './logos/client-logo-placeholder.svg'
+import partnerLogo from './partners/partner-logo-placeholder.svg'
+import gallery from './gallery/gallery-placeholder.svg'
+import icon from './icons/image-placeholder.svg'
+
+export const images = { hero, service, flowdesk, campus, signal, hackathon, founder, mentor, judge, testimonial, clientLogo, partnerLogo, gallery, icon }
