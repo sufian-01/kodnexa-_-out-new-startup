@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion'
+export default function TypingIndicator() { return <div className="flex items-center gap-2 text-xs text-slate-400"><span className="text-base">??</span><span className="flex gap-1">{[0,1,2].map((i) => <motion.i key={i} animate={{ y: [0,-3,0] }} transition={{ repeat: Infinity, duration: .7, delay: i * .12 }} className="h-1.5 w-1.5 rounded-full bg-cyan" />)}</span><span>Thinkingâ€¦</span></div> }

@@ -1,0 +1,2 @@
+import { motion } from 'framer-motion'
+export default function QuickActions({ actions, onAction }) { return <div className="flex flex-wrap gap-2">{actions.map((action) => <motion.button key={action} layout onClick={() => onAction(action)} whileTap={{ scale: .94 }} className="rounded-full border border-indigo-400/25 bg-indigo/10 px-3 py-1.5 text-xs font-medium text-indigo-200 transition hover:border-cyan/50 hover:bg-cyan/10 hover:text-white">{action}</motion.button>)}</div> }
