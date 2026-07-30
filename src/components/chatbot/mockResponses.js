@@ -1,7 +1,7 @@
 const email = 'Info.kodnexus@gmail.com'
 const address = 'Shaheen Bagh, New Delhi, India'
 
-const founderResponse = `Kodnexa was founded by Mohammad Sufian (AI Engineer) and Md Mozammil (Software Engineer).
+const founderResponse = `Kodnexus was founded by Mohammad Sufian (AI Engineer) and Md Mozammil (Software Engineer).
 
 Together they are building AI-powered products, automation systems, enterprise software solutions and technology-focused learning experiences.`
 
@@ -11,7 +11,7 @@ const mozammilBio = `Md Mozammil is a Software Engineer specializing in scalable
 
 const greeting = `Hello! 👋
 
-Welcome to Kodnexa.
+Welcome to Kodnexus.
 
 I'm your virtual assistant.
 
@@ -32,23 +32,23 @@ const responses = [
   { terms: ['mohammad sufian', 'sufian'], text: sufianBio },
   { terms: ['md mozammil', 'mozammil'], text: mozammilBio },
   { terms: ['founder', 'founders', 'co-founder', 'owner', 'ceo', 'team'], text: founderResponse },
-  { terms: ['service', 'services', 'ai development', 'software development', 'web development', 'website', 'automation', 'python', 'machine learning', 'llm', 'generative ai', 'chatbot'], text: `Kodnexa services:
+  { terms: ['service', 'services', 'ai development', 'software development', 'web development', 'website', 'automation', 'python', 'machine learning', 'llm', 'generative ai', 'chatbot'], text: `Kodnexus services:
 • AI development and intelligent products
 • Software and web development
 • Automation systems and AI agents
 • Python, machine learning and Generative AI solutions
 • Technology training and workshops` },
-  { terms: ['hackathon', 'hackathons', 'training', 'workshop'], text: 'Kodnexa Hackathons are high-energy build experiences where students and teams collaborate, prototype practical ideas and ship working AI solutions. We also offer hands-on training and workshops for every experience level.' },
-  { terms: ['internship', 'internships', 'career', 'careers'], text: 'Kodnexa offers technology-focused learning and internship opportunities for emerging builders. Contact us with your profile and area of interest to learn about current openings.' },
-  { terms: ['project', 'projects', 'portfolio', 'technology'], text: 'Kodnexa builds AI-powered products, automation systems, enterprise software solutions and modern web applications designed for real-world impact.' },
-  { terms: ['contact', 'email', 'phone', 'location', 'located', 'address', 'google map', 'map', 'book meeting', 'meeting', 'call'], text: `Contact Kodnexa:
+  { terms: ['hackathon', 'hackathons', 'training', 'workshop'], text: 'Kodnexus Hackathons are high-energy build experiences where students and teams collaborate, prototype practical ideas and ship working AI solutions. We also offer hands-on training and workshops for every experience level.' },
+  { terms: ['internship', 'internships', 'career', 'careers'], text: 'Kodnexus offers technology-focused learning and internship opportunities for emerging builders. Contact us with your profile and area of interest to learn about current openings.' },
+  { terms: ['project', 'projects', 'portfolio', 'technology'], text: 'Kodnexus builds AI-powered products, automation systems, enterprise software solutions and modern web applications designed for real-world impact.' },
+  { terms: ['contact', 'email', 'phone', 'location', 'located', 'address', 'google map', 'map', 'book meeting', 'meeting', 'call'], text: `Contact Kodnexus:
 
 Email: ${email}
 Address: ${address}
 Location: Shaheen Bagh, New Delhi, India
 Google Map: Visit our Contact page
 Book Meeting: Visit our Contact page or email us to schedule a meeting.` },
-  { terms: ['company', 'about', 'vision', 'mission', 'kodnexa'], text: 'Kodnexa makes advanced AI practical, accessible and impactful for startups, educational institutions and enterprises through intelligent products, automation systems and modern software solutions.' },
+  { terms: ['company', 'about', 'vision', 'mission', 'kodnexus'], text: 'Kodnexus makes advanced AI practical, accessible and impactful for startups, educational institutions and enterprises through intelligent products, automation systems and modern software solutions.' },
   { terms: ['pricing', 'price', 'cost', 'quote'], text: 'Pricing depends on the scope of your requirements. Please contact us at Info.kodnexus@gmail.com and we will help you with the right option.' },
 ]
 
@@ -69,7 +69,7 @@ export function sendMessage(message) {
   if (matches(normalizedMessage, ['thank', 'thanks', 'great', 'awesome'])) {
     text = `You're most welcome! 😊
 
-Thank you for visiting Kodnexa.
+Thank you for visiting Kodnexus.
 
 If you need any further assistance, feel free to ask anytime.
 

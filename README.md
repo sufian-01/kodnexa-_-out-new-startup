@@ -1,4 +1,4 @@
-# Kodnexa Portfolio Website
+# Kodnexus Portfolio Website
 
 A frontend-only portfolio website built with React, Vite, and Tailwind CSS. It includes a fully local, rule-based chatbot and is ready for straightforward Vercel deployment.
 
