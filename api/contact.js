@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 
 const FROM_EMAIL = 'info@kodnexus.com'
-const TO_EMAIL = 'info.kodnexus@gmail.com'
+const TO_EMAIL = 'info@kodnexus.com'
 
 function sanitize(value) {
   return String(value ?? '').trim()

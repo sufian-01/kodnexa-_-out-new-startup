@@ -3,6 +3,16 @@ import { Globe2 as Github, Globe2 as Instagram, Link as Linkedin, Mail, MapPin, 
 import PageHero from '../components/PageHero'
 import Faq from '../components/Faq'
 
+const contactEmail = 'info@kodnexus.com'
+const phoneNumber = '9135738848'
+const address = 'Jaitpur, khadda colony, New Delhi 110044'
+const socialLinks = [
+  ['LinkedIn', Linkedin, 'https://www.linkedin.com/company/kodnexusofficial/'],
+  ['WhatsApp', Twitter, 'https://wa.me/919135738848'],
+  ['Instagram', Instagram, 'https://www.instagram.com/kodnexus?igsh=MWdjamVvcWxvd2R1cw=='],
+  ['Website', Github, 'https://kodnexus.com'],
+]
+
 const faqs = [
   ['How soon will you respond?', 'We typically reply within one business day and will suggest the best next step for your inquiry.'],
   ['Do you work with students and institutions?', 'Yes. Student enablement and institution-focused programs are central to Kodnexus.'],
@@ -105,15 +115,15 @@ export default function Contact() {
           <div className="rounded-2xl border border-white/10 bg-white/[.03] p-7">
             <h2 className="font-display text-2xl text-white">Company details</h2>
             <div className="mt-6 space-y-5">
-              <p className="flex gap-3 text-sm text-slate-400"><Mail className="h-5 w-5 shrink-0 text-indigo-300" /><a href="mailto:Info.kodnexus@gmail.com" className="hover:text-white">Info.kodnexus@gmail.com</a></p>
-              <p className="flex gap-3 text-sm text-slate-400"><Phone className="h-5 w-5 shrink-0 text-indigo-300" />Contact us by email to schedule a meeting.</p>
-              <p className="flex gap-3 text-sm text-slate-400"><MapPin className="h-5 w-5 shrink-0 text-indigo-300" />Shaheen Bagh, New Delhi, India</p>
+              <p className="flex gap-3 text-sm text-slate-400"><Mail className="h-5 w-5 shrink-0 text-indigo-300" /><a href={`mailto:${contactEmail}`} className="hover:text-white">{contactEmail}</a></p>
+              <p className="flex gap-3 text-sm text-slate-400"><Phone className="h-5 w-5 shrink-0 text-indigo-300" /><a href={`tel:+91${phoneNumber}`} className="hover:text-white">+91 {phoneNumber}</a></p>
+              <p className="flex gap-3 text-sm text-slate-400"><MapPin className="h-5 w-5 shrink-0 text-indigo-300" />{address}</p>
             </div>
             <div className="mt-7 flex gap-3">
-              {[Linkedin, Twitter, Instagram, Github].map((Icon, i) => <a key={i} href="#" className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 hover:text-white"><Icon className="h-4 w-4" /></a>)}
+              {socialLinks.map(([label, Icon, href]) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 hover:text-white"><Icon className="h-4 w-4" /></a>)}
             </div>
           </div>
-          <iframe title="Kodnexus location map" src="https://www.google.com/maps?q=Shaheen+Bagh,+New+Delhi,+India&output=embed" loading="lazy" className="h-[220px] w-full rounded-2xl border border-dashed border-indigo-300/35" />
+          <iframe title="Kodnexus location map" src="https://www.google.com/maps?q=Jaitpur,+Khadda+Colony,+New+Delhi+110044&output=embed" loading="lazy" className="h-[220px] w-full rounded-2xl border border-dashed border-indigo-300/35" />
         </div>
       </section>
       <section className="bg-[#080d1d] py-20 sm:py-28">

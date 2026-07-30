@@ -15,9 +15,9 @@ export const NAVIGATION = [
 ]
 
 export const SOCIAL_LINKS = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
-  { label: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
-  { label: 'WhatsApp', href: 'https://wa.me/919876543210', icon: 'whatsapp' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/kodnexusofficial/', icon: 'linkedin' },
+  { label: 'Instagram', href: 'https://www.instagram.com/kodnexus?igsh=MWdjamVvcWxvd2R1cw==', icon: 'instagram' },
+  { label: 'WhatsApp', href: 'https://wa.me/919135738848', icon: 'whatsapp' },
 ]
 
 export const HACKATHON_DATE = '2026-09-18T09:00:00+05:30'
