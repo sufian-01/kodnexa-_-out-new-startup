@@ -15,21 +15,21 @@ export const NAVIGATION = [
 ]
 
 export const SOCIAL_LINKS = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
-  { label: 'Instagram', href: 'https://www.instagram.com', icon: 'instagram' },
-  { label: 'WhatsApp', href: 'https://wa.me/919876543210', icon: 'whatsapp' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/kodnexusofficial/', icon: 'linkedin' },
+  { label: 'Instagram', href: 'https://www.instagram.com/kodnexus?igsh=MWdjamVvcWxvd2R1cw==', icon: 'instagram' },
+  { label: 'WhatsApp', href: 'https://wa.me/919135738848', icon: 'whatsapp' },
 ]
 
 export const HACKATHON_DATE = '2026-09-18T09:00:00+05:30'
 export const HACKATHONS = [
   { status: 'completed', title: 'AI Innovation Challenge 2025', label: 'Completed', action: 'View Gallery' },
-  { status: 'live', title: 'Kodnexa AI Hackathon 2026', label: 'LIVE NOW', action: 'Register now' },
+  { status: 'live', title: 'Kodnexus AI Hackathon 2026', label: 'LIVE NOW', action: 'Register now' },
   { status: 'upcoming', title: 'GenAI Buildathon', label: 'Coming Soon', action: 'Notify Me' },
   { status: 'upcoming', title: 'AI for Healthcare', label: 'Coming Soon', action: 'Notify Me' },
 ]
 
 export const TESTIMONIALS = [
-  { name: 'Ananya Mehta', company: 'Nivara', role: 'Product Lead', review: 'Kodnexa made AI feel tangible for our whole team. We left with prototypes and a clear next step.' },
+  { name: 'Ananya Mehta', company: 'Nivara', role: 'Product Lead', review: 'Kodnexus made AI feel tangible for our whole team. We left with prototypes and a clear next step.' },
   { name: 'Rohan Kapoor', company: 'Northstar', role: 'Founder', review: 'A rare balance of thoughtful strategy and serious execution. They became an extension of our team.' },
   { name: 'Dr. P. Sharma', company: 'Innova Institute', role: 'Innovation Director', review: 'The hackathon shifted how our students think about building. It was electric.' },
 ]

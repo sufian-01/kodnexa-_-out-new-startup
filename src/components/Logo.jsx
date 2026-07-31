@@ -1,5 +1,5 @@
-import logo from '../assets/logo.png'
+import logo from '../assets/logo-kodnexus-transparent.png'
 
 export default function Logo({ className = '' }) {
-  return <img src={logo} alt="Kodnexa" className={`h-[76px] w-auto max-w-[380px] shrink-0 object-contain sm:h-20 lg:h-[100px] ${className}`} />
+  return <img src={logo} alt="Kodnexus" className={`h-8 w-auto max-w-[160px] shrink-0 object-contain sm:h-9 lg:h-10 ${className}`} />
 }
