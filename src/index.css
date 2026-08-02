@@ -16,4 +16,5 @@
   .eyebrow { @apply mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-400/20 bg-indigo-400/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[.16em] text-indigo-200; }
   .glass { @apply border border-white/10 bg-white/[.035] backdrop-blur-xl; }
   .gradient-text { @apply bg-gradient-to-r from-indigo-300 via-violet-300 to-cyan-300 bg-clip-text text-transparent; }
+  .md-mozammil-portrait { @apply h-full w-full object-cover; object-position: center 26%; }
 }
