@@ -30,7 +30,7 @@ export default function Hackathon() {
 
   return (
     <main id="main-content">
-      <PageHero eyebrow="Kodnexus Labs presents" title={<>The AI Build <span className="gradient-text">Hackathons.</span></>} copy="High-energy spaces to meet brilliant people, turn a spark into a prototype and make something worth sharing.">
+      <PageHero eyebrow="kodnexus Labs presents" title={<>The AI Build <span className="gradient-text">Hackathons.</span></>} copy="High-energy spaces to meet brilliant people, turn a spark into a prototype and make something worth sharing.">
         <Button onClick={() => setOpen(true)} className="mt-7">Reserve your spot</Button>
       </PageHero>
       <section className="section-shell pb-20 sm:pb-28">
@@ -49,8 +49,8 @@ export default function Hackathon() {
       </section>
       <section className="bg-[#080d1d] py-20 sm:py-28">
         <div className="section-shell grid gap-7 lg:grid-cols-[1.15fr_.85fr]">
-          <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]"><img src={hackathonImage} alt="Kodnexus hackathon" className="absolute inset-0 h-full w-full object-cover" /></div>
-          <div className="rounded-2xl border border-indigo-400/25 bg-indigo/10 p-7"><p className="text-sm font-semibold text-cyan">Kodnexus AI Hackathon 2026</p><h2 className="mt-3 font-display text-3xl text-white">Build with AI. Ship something real.</h2><Countdown target={HACKATHON_DATE} className="mt-7" /><Button onClick={() => setOpen(true)} className="mt-7 w-full">Register now</Button></div>
+          <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]"><img src={hackathonImage} alt="kodnexus hackathon" className="absolute inset-0 h-full w-full object-cover" /></div>
+          <div className="rounded-2xl border border-indigo-400/25 bg-indigo/10 p-7"><p className="text-sm font-semibold text-cyan">kodnexus AI Hackathon 2026</p><h2 className="mt-3 font-display text-3xl text-white">Build with AI. Ship something real.</h2><Countdown target={HACKATHON_DATE} className="mt-7" /><Button onClick={() => setOpen(true)} className="mt-7 w-full">Register now</Button></div>
         </div>
       </section>
       <section className="section-shell py-20 sm:py-28">

@@ -265,7 +265,7 @@ function AISoftwareInternshipPage({ role }) {
           <Card hover={false} className="p-7 sm:p-9">
             <SectionHeading eyebrow="About this Internship" title="About this Internship" />
             <div className="space-y-5 leading-8 text-slate-400">
-              <p>At Kodnexus, you'll work on real AI and software development projects instead of only practice assignments. You'll collaborate on modern web applications, AI integrations, automation systems, APIs, and scalable products while learning industry best practices.</p>
+              <p>At kodnexus, you'll work on real AI and software development projects instead of only practice assignments. You'll collaborate on modern web applications, AI integrations, automation systems, APIs, and scalable products while learning industry best practices.</p>
               <p>Whether you're passionate about React, AI, backend development, or automation, this internship provides practical experience, mentorship, and the opportunity to contribute to meaningful projects that strengthen your portfolio.</p>
             </div>
           </Card>
@@ -344,7 +344,7 @@ function AISoftwareInternshipPage({ role }) {
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-cyan/15 blur-3xl" />
             <div className="relative">
               <h2 className="font-display text-3xl font-semibold text-white sm:text-5xl">Ready to Build Real AI Products?</h2>
-              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join Kodnexus and gain practical experience by working on AI, automation, and modern software development projects.</p>
+              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join kodnexus and gain practical experience by working on AI, automation, and modern software development projects.</p>
               <Button href={applicationFormUrl} className="mt-8">Apply Now</Button>
             </div>
           </div>
@@ -366,7 +366,7 @@ function BusinessDevelopmentInternshipPage({ role }) {
             <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: .12 } } }}>
               <Reveal><span className="eyebrow"><Sparkles className="h-3.5 w-3.5" /> {role.status} opportunity</span></Reveal>
               <Reveal><h1 className="font-display text-4xl font-semibold tracking-tight text-white sm:text-6xl">Business Development & Operations Intern</h1></Reveal>
-              <Reveal><p className="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">Help grow Kodnexus by finding new opportunities, building partnerships, generating leads, and supporting real business operations while learning practical startup execution.</p></Reveal>
+              <Reveal><p className="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">Help grow kodnexus by finding new opportunities, building partnerships, generating leads, and supporting real business operations while learning practical startup execution.</p></Reveal>
               <Reveal className="mt-7 flex flex-wrap gap-2">{['Business Development', 'Lead Generation', 'Operations', 'Partnerships'].map(skill => <Pill key={skill}>{skill}</Pill>)}</Reveal>
             </motion.div>
             <Reveal>
@@ -391,7 +391,7 @@ function BusinessDevelopmentInternshipPage({ role }) {
           <Card hover={false} className="p-7 sm:p-9">
             <SectionHeading eyebrow="About this Internship" title="About this Internship" />
             <div className="space-y-5 leading-8 text-slate-400">
-              <p>At Kodnexus, you'll work directly on real business development and operational activities that help the company grow.</p>
+              <p>At kodnexus, you'll work directly on real business development and operational activities that help the company grow.</p>
               <p>This internship provides practical exposure to lead generation, outreach, partnerships, client communication, CRM management, and business execution. You'll collaborate with the founders, learn how business decisions are made, and contribute to real company growth initiatives.</p>
             </div>
           </Card>
@@ -462,7 +462,7 @@ function BusinessDevelopmentInternshipPage({ role }) {
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-cyan/15 blur-3xl" />
             <div className="relative">
               <h2 className="font-display text-3xl font-semibold text-white sm:text-5xl">Ready to Build Your Business Career?</h2>
-              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join Kodnexus and gain real-world experience in business development, partnerships, operations, and company growth.</p>
+              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join kodnexus and gain real-world experience in business development, partnerships, operations, and company growth.</p>
               <Button href={applicationFormUrl} className="mt-8">Apply Now</Button>
             </div>
           </div>
@@ -484,7 +484,7 @@ function MarketingInternshipPage({ role }) {
             <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: .12 } } }}>
               <Reveal><span className="eyebrow"><Sparkles className="h-3.5 w-3.5" /> {role.status} opportunity</span></Reveal>
               <Reveal><h1 className="font-display text-4xl font-semibold tracking-tight text-white sm:text-6xl">Digital Marketing & Growth Intern</h1></Reveal>
-              <Reveal><p className="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">Create engaging content, grow the Kodnexus brand, manage social media, and learn modern digital marketing while working on real projects.</p></Reveal>
+              <Reveal><p className="mt-6 max-w-2xl text-base leading-8 text-slate-400 sm:text-lg">Create engaging content, grow the kodnexus brand, manage social media, and learn modern digital marketing while working on real projects.</p></Reveal>
               <Reveal className="mt-7 flex flex-wrap gap-2">{['Digital Marketing', 'Social Media', 'SEO', 'Growth'].map(skill => <Pill key={skill}>{skill}</Pill>)}</Reveal>
             </motion.div>
             <Reveal>
@@ -509,8 +509,8 @@ function MarketingInternshipPage({ role }) {
           <Card hover={false} className="p-7 sm:p-9">
             <SectionHeading eyebrow="About this Internship" title="About this Internship" />
             <div className="space-y-5 leading-8 text-slate-400">
-              <p>At Kodnexus, you'll work on real digital marketing campaigns, content creation, social media growth, and brand building while learning practical marketing strategies.</p>
-              <p>You'll help improve Kodnexus' online presence through content planning, Canva design, social media management, SEO research, growth experiments, and outreach campaigns while building a strong marketing portfolio.</p>
+              <p>At kodnexus, you'll work on real digital marketing campaigns, content creation, social media growth, and brand building while learning practical marketing strategies.</p>
+              <p>You'll help improve kodnexus' online presence through content planning, Canva design, social media management, SEO research, growth experiments, and outreach campaigns while building a strong marketing portfolio.</p>
             </div>
           </Card>
         </Reveal>
@@ -587,7 +587,7 @@ function MarketingInternshipPage({ role }) {
             <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-cyan/15 blur-3xl" />
             <div className="relative">
               <h2 className="font-display text-3xl font-semibold text-white sm:text-5xl">Ready to Build Your Marketing Career?</h2>
-              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join Kodnexus and gain practical experience in digital marketing, content creation, branding, SEO, and growth while working on real projects.</p>
+              <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-300">Join kodnexus and gain practical experience in digital marketing, content creation, branding, SEO, and growth while working on real projects.</p>
               <Button href={applicationFormUrl} className="mt-8">Apply Now</Button>
             </div>
           </div>

@@ -48,10 +48,10 @@ export default function Opportunities() {
         <div className="absolute inset-0 -z-10 bg-grid bg-[size:56px_56px] [mask-image:linear-gradient(to_bottom,black,transparent_82%)]" />
         <div className="section-shell grid items-center gap-12 pb-20 lg:min-h-[650px] lg:grid-cols-[1.05fr_.95fr] lg:pb-24">
           <motion.div initial="hidden" animate="visible" variants={{ visible: { transition: { staggerChildren: .13 } } }}>
-            <Reveal><span className="eyebrow"><Rocket className="h-3.5 w-3.5" /> Careers at Kodnexus</span></Reveal>
+            <Reveal><span className="eyebrow"><Rocket className="h-3.5 w-3.5" /> Careers at kodnexus</span></Reveal>
             <Reveal>
               <h1 className="font-display text-4xl font-semibold leading-[1.12] tracking-tight text-white sm:text-5xl xl:text-6xl">
-                Grow Your Career<br />with <span className="gradient-text">Kodnexus</span>
+                Grow Your Career<br />with <span className="gradient-text">kodnexus</span>
               </h1>
             </Reveal>
             <Reveal><p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">Join a community of innovators, builders and dreamers. Explore internships, programs and career opportunities to learn, build and make a real impact.</p></Reveal>
@@ -74,7 +74,7 @@ export default function Opportunities() {
       <Section id="openings" className="section-shell py-16 sm:py-20">
         <Reveal><span className="eyebrow">Current openings</span></Reveal>
         <Reveal><h2 className="font-display text-3xl font-semibold text-white sm:text-5xl">Current Open <span className="gradient-text">Opportunities</span></h2></Reveal>
-        <Reveal><p className="mt-4 max-w-2xl leading-7 text-slate-400">Find the right role to start your journey with Kodnexus.</p></Reveal>
+        <Reveal><p className="mt-4 max-w-2xl leading-7 text-slate-400">Find the right role to start your journey with kodnexus.</p></Reveal>
         <Reveal className="mt-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-wrap gap-3">{opportunityTabs.map(tab => <button key={tab} onClick={() => setActiveTab(tab)} className={`rounded-xl border px-5 py-2.5 text-sm font-semibold transition ${activeTab === tab ? 'border-indigo/60 bg-gradient-to-r from-indigo to-violet text-white shadow-glow' : 'border-white/10 bg-white/[.035] text-slate-300 hover:border-indigo-300/40 hover:text-white'}`}>{tab}</button>)}</div>
           <div className="hidden min-w-[250px] items-center gap-2 rounded-xl border border-white/10 bg-white/[.035] px-4 py-2.5 text-sm text-slate-500 lg:flex"><Search className="h-4 w-4" />Search roles...</div>
@@ -103,7 +103,7 @@ export default function Opportunities() {
       </Section>
 
       <Section className="section-shell py-16 sm:py-20">
-        <Reveal><h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">Why Join <span className="gradient-text">Kodnexus</span></h2></Reveal>
+        <Reveal><h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">Why Join <span className="gradient-text">kodnexus</span></h2></Reveal>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{benefits.map(([title, Icon]) => <Reveal key={title}><Card className="p-5"><span className="grid h-10 w-10 place-items-center rounded-xl bg-indigo/15 text-indigo-300"><Icon className="h-5 w-5" /></span><h3 className="mt-4 text-sm font-semibold text-white">{title}</h3></Card></Reveal>)}</div>
       </Section>
 
