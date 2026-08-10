@@ -37,7 +37,7 @@ export const openOpportunities = [
     compensation: 'Unpaid + PPO',
     skills: ['SEO', 'Social Media', 'Analytics', 'Content'],
     summary: 'Run live campaigns, grow brand visibility and master modern digital marketing strategies.',
-    responsibilities: ['Plan and publish content across social and search channels.', 'Track campaign performance and turn analytics into clear next actions.', 'Support growth experiments for Kodnexus programs, events and services.'],
+    responsibilities: ['Plan and publish content across social and search channels.', 'Track campaign performance and turn analytics into clear next actions.', 'Support growth experiments for kodnexus programs, events and services.'],
   },
   {
     title: 'Business Development Intern',

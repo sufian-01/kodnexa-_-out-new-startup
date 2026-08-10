@@ -33,7 +33,7 @@ export default function Navbar() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? 'border-b border-white/10 bg-ink/85 py-3 backdrop-blur-xl' : 'py-5'}`}>
       <motion.div className="absolute bottom-0 left-0 h-px bg-gradient-to-r from-indigo via-violet to-cyan" animate={{ width: `${progress}%` }} transition={{ duration: .12 }} />
       <div className="section-shell flex items-center justify-between">
-        <a href="/" aria-label="Kodnexus home"><Logo /></a>
+        <a href="/" aria-label="kodnexus home"><Logo /></a>
         <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
           {NAVBAR_ITEMS.map(({ label, path }) => (
             <a key={path} href={path} aria-current={pathname === path ? 'page' : undefined} className={`text-sm font-medium transition hover:text-white ${pathname === path ? 'text-white' : 'text-slate-400'}`}>{label}</a>

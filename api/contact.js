@@ -2,7 +2,7 @@ import { Resend } from 'resend'
 
 const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'info@kodnexus.com'
 const TO_EMAIL = process.env.CONTACT_TO_EMAIL || 'info@kodnexus.com'
-const FROM_HEADER = FROM_EMAIL.includes('<') ? FROM_EMAIL : `Kodnexus <${FROM_EMAIL}>`
+const FROM_HEADER = FROM_EMAIL.includes('<') ? FROM_EMAIL : `kodnexus <${FROM_EMAIL}>`
 const LOGO_URL = process.env.KODNEXUS_LOGO_URL || 'https://kodnexus.com/assets/logo-kodnexus-transparent-DdQaJLjQ.png'
 
 function sanitize(value) {
@@ -33,22 +33,22 @@ function buildAcknowledgmentHtml(name) {
             <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px; border-collapse:collapse; overflow:hidden; border-radius:18px; background:#ffffff; box-shadow:0 16px 45px rgba(15, 23, 42, 0.08);">
               <tr>
                 <td style="padding:30px 34px 22px; background:#070b18;">
-                  <img src="${escapeHtml(LOGO_URL)}" width="172" alt="KodNexus" style="display:block; max-width:172px; height:auto; border:0;" />
+                  <img src="${escapeHtml(LOGO_URL)}" width="172" alt="kodnexus" style="display:block; max-width:172px; height:auto; border:0;" />
                 </td>
               </tr>
               <tr>
                 <td style="padding:34px;">
-                  <h1 style="margin:0 0 18px; color:#111827; font-size:26px; line-height:1.25; font-weight:700;">Thank you for contacting KodNexus</h1>
+                  <h1 style="margin:0 0 18px; color:#111827; font-size:26px; line-height:1.25; font-weight:700;">Thank you for contacting kodnexus</h1>
                   <p style="margin:0 0 16px; color:#374151; font-size:16px; line-height:1.7;">Hi ${safeName},</p>
                   <p style="margin:0 0 16px; color:#374151; font-size:16px; line-height:1.7;">Thank you for your inquiry. We have received your message and appreciate you taking the time to reach out to us.</p>
                   <p style="margin:0 0 16px; color:#374151; font-size:16px; line-height:1.7;">Our team will review your message and respond within 24 hours.</p>
                   <p style="margin:0 0 24px; color:#374151; font-size:16px; line-height:1.7;"><strong>If your inquiry is urgent, you can also reach us at <a href="mailto:info@kodnexus.com" style="color:#4f46e5; text-decoration:none;">info@kodnexus.com</a>.</strong></p>
                   <div style="margin:28px 0; height:1px; background:#e5e7eb;"></div>
-                  <p style="margin:0; color:#111827; font-size:16px; line-height:1.7;">Best regards,<br /><strong>The KodNexus Team</strong></p>
+                  <p style="margin:0; color:#111827; font-size:16px; line-height:1.7;">Best regards,<br /><strong>The kodnexus Team</strong></p>
                   <div style="margin:30px 0 0; padding:22px 0 0; border-top:1px solid #e5e7eb;">
-                    <img src="${escapeHtml(LOGO_URL)}" width="132" alt="KodNexus Logo" style="display:block; max-width:132px; height:auto; border:0; margin:0 0 12px;" />
+                    <img src="${escapeHtml(LOGO_URL)}" width="132" alt="kodnexus Logo" style="display:block; max-width:132px; height:auto; border:0; margin:0 0 12px;" />
                     <p style="margin:0 0 8px; color:#4f46e5; font-size:14px; line-height:1.6;"><a href="https://kodnexus.com" style="color:#4f46e5; text-decoration:none;">https://kodnexus.com</a></p>
-                    <p style="margin:0; color:#6b7280; font-size:13px; line-height:1.6;">&copy; 2026 KodNexus. All rights reserved.</p>
+                    <p style="margin:0; color:#6b7280; font-size:13px; line-height:1.6;">&copy; 2026 kodnexus. All rights reserved.</p>
                   </div>
                 </td>
               </tr>
@@ -69,11 +69,11 @@ function buildAcknowledgmentText(name) {
     'If your inquiry is urgent, you can also reach us at info@kodnexus.com.',
     '',
     'Best regards,',
-    'The KodNexus Team',
+    'The kodnexus Team',
     '',
-    'KodNexus Logo',
+    'kodnexus Logo',
     'https://kodnexus.com',
-    '© 2026 KodNexus. All rights reserved.',
+    '© 2026 kodnexus. All rights reserved.',
   ].join('\n')
 }
 
@@ -155,7 +155,7 @@ export default async function handler(req, res) {
     const { error: acknowledgmentError } = await resend.emails.send({
       from: FROM_HEADER,
       to: email,
-      subject: 'Thank you for contacting KodNexus',
+      subject: 'Thank you for contacting kodnexus',
       text: buildAcknowledgmentText(name),
       html: buildAcknowledgmentHtml(name),
     })

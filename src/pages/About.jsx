@@ -12,7 +12,7 @@ const founders = [
     image: founderOne,
     imageClass: 'origin-top -translate-x-[6%] scale-[1.5] object-cover object-top sm:translate-x-0',
     linkedin: 'https://www.linkedin.com/in/mohammad-sufian-08077a2b8',
-    bio: 'Mohammad Sufian is the Co-Founder & Chief Technology Officer (CTO) at KodNexus. He leads the company\'s technology vision, software architecture, and engineering strategy. Passionate about AI, modern software development, and scalable systems, he specializes in building AI automation solutions, full-stack web applications, SaaS platforms, and high-performance backend systems. He ensures every product is secure, scalable, and built using modern engineering best practices.',
+    bio: 'Mohammad Sufian is the Co-Founder & Chief Technology Officer (CTO) at kodnexus. He leads the company\'s technology vision, software architecture, and engineering strategy. Passionate about AI, modern software development, and scalable systems, he specializes in building AI automation solutions, full-stack web applications, SaaS platforms, and high-performance backend systems. He ensures every product is secure, scalable, and built using modern engineering best practices.',
   },
   {
     name: 'Md Mozammil',
@@ -20,7 +20,7 @@ const founders = [
     image: founderTwo,
     linkedin: 'https://www.linkedin.com/in/mmozammil',
     imageClass: 'object-contain object-center',
-    bio: 'Md Mozammil is the Founder & CEO of KodNexus, leading the company\'s vision, business strategy, and global partnerships. He focuses on helping startups, agencies, and businesses build AI-powered solutions, scalable web applications, SaaS platforms, and custom software. His primary focus is business growth, client relationships, strategic partnerships, and expanding KodNexus into a trusted global technology company.',
+    bio: 'Md Mozammil is the Founder & CEO of kodnexus, leading the company\'s vision, business strategy, and global partnerships. He focuses on helping startups, agencies, and businesses build AI-powered solutions, scalable web applications, SaaS platforms, and custom software. His primary focus is business growth, client relationships, strategic partnerships, and expanding kodnexus into a trusted global technology company.',
   },
   {
     name: 'Habiba Shahid',
@@ -28,7 +28,7 @@ const founders = [
     image: habibaShahid,
     imageClass: 'object-contain object-center',
     linkedin: 'https://www.linkedin.com/in/habiba-shahid-5ab717325/',
-    bio: 'Habiba Shahid is the Co-Founder & Chief Operating Officer (COO) at KodNexus, overseeing day-to-day operations, project coordination, client communication, and delivery management. She focuses on streamlining workflows, ensuring efficient execution, and helping the team deliver high-quality solutions while maintaining strong client relationships and operational excellence.',
+    bio: 'Habiba Shahid is the Co-Founder & Chief Operating Officer (COO) at kodnexus, overseeing day-to-day operations, project coordination, client communication, and delivery management. She focuses on streamlining workflows, ensuring efficient execution, and helping the team deliver high-quality solutions while maintaining strong client relationships and operational excellence.',
   },
 ]
 
@@ -36,7 +36,7 @@ export default function About() {
   return (
     <main>
       <PageHero
-        eyebrow="About Kodnexus"
+        eyebrow="About kodnexus"
         title={<>The people behind the <span className="gradient-text">possibility.</span></>}
         copy="We're a collective of builders, educators and problem-solvers making technology feel more useful, more human and more accessible."
       />
@@ -61,12 +61,12 @@ export default function About() {
       <section className="bg-[#080d1d] py-20 sm:py-28">
         <div className="section-shell grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
           <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]">
-            <img src={storyImage} alt="Kodnexus team collaborating in a modern technology workspace" className="absolute inset-0 h-full w-full object-cover opacity-70" />
+            <img src={storyImage} alt="kodnexus team collaborating in a modern technology workspace" className="absolute inset-0 h-full w-full object-cover opacity-70" />
           </div>
           <div>
             <span className="eyebrow">Our story</span>
             <h2 className="font-display text-3xl text-white sm:text-5xl">Started with a belief that <span className="gradient-text">progress should be shared.</span></h2>
-            <p className="mt-6 leading-7 text-slate-400">Kodnexus began at the intersection of industry ambition and student potential. Today, we partner with teams that are ready to turn emerging technology into meaningful outcomes.</p>
+            <p className="mt-6 leading-7 text-slate-400">kodnexus began at the intersection of industry ambition and student potential. Today, we partner with teams that are ready to turn emerging technology into meaningful outcomes.</p>
             <div className="mt-7 flex items-center gap-3 text-sm text-slate-300"><Trophy className="h-5 w-5 text-cyan" /> Built for the work that comes next.</div>
           </div>
         </div>
@@ -77,7 +77,7 @@ export default function About() {
           <span className="eyebrow">Leadership</span>
           <h2 className="font-display text-3xl text-white sm:text-5xl">Meet the Leadership</h2>
           <p className="mx-auto mt-4 max-w-3xl text-sm leading-6 text-slate-400 sm:text-base sm:leading-7">
-            The people driving innovation, engineering, and operations at KodNexus. Together, we're committed to building intelligent software solutions, delivering exceptional client experiences, and helping businesses scale with modern technology.
+            The people driving innovation, engineering, and operations at kodnexus. Together, we're committed to building intelligent software solutions, delivering exceptional client experiences, and helping businesses scale with modern technology.
           </p>
         </div>
         <div className="mx-auto mt-8 grid max-w-7xl gap-5 md:grid-cols-2 lg:grid-cols-3 xl:gap-6">
@@ -123,7 +123,7 @@ export default function About() {
         <h2 className="font-display text-3xl text-white sm:text-5xl">Milestones with momentum.</h2>
         <div className="mt-10 grid gap-4 md:grid-cols-4">
           {[
-            ['2026', 'Kodnexus Founded'],
+            ['2026', 'kodnexus Founded'],
             ['2026', 'Company Launch'],
             ['Today', 'Building AI Products, Automation & Technology Solutions'],
           ].map(([year, text]) => (
@@ -142,7 +142,7 @@ export default function About() {
           <article className="rounded-2xl border border-white/10 bg-white/[.03] p-7">
             <Quote className="h-6 w-6 text-cyan" />
             <p className="mt-5 font-display text-lg leading-8 text-slate-200">"The learning was practical, engaging and immediately confidence-building."</p>
-            <p className="mt-5 text-sm text-slate-400">- Kodnexus student</p>
+            <p className="mt-5 text-sm text-slate-400">- kodnexus student</p>
           </article>
         </div>
       </section>

@@ -15,7 +15,7 @@ const socialLinks = [
 
 const faqs = [
   ['How soon will you respond?', 'We typically reply within one business day and will suggest the best next step for your inquiry.'],
-  ['Do you work with students and institutions?', 'Yes. Student enablement and institution-focused programs are central to Kodnexus.'],
+  ['Do you work with students and institutions?', 'Yes. Student enablement and institution-focused programs are central to kodnexus.'],
   ['Can you tailor a service to our team?', 'Absolutely. Every engagement starts by understanding your goals and constraints.'],
 ]
 
@@ -123,7 +123,7 @@ export default function Contact() {
               {socialLinks.map(([label, Icon, href]) => <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label} className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 hover:text-white"><Icon className="h-4 w-4" /></a>)}
             </div>
           </div>
-          <iframe title="Kodnexus location map" src="https://www.google.com/maps?q=Jaitpur,+Khadda+Colony,+New+Delhi+110044&output=embed" loading="lazy" className="h-[220px] w-full rounded-2xl border border-dashed border-indigo-300/35" />
+          <iframe title="kodnexus location map" src="https://www.google.com/maps?q=Jaitpur,+Khadda+Colony,+New+Delhi+110044&output=embed" loading="lazy" className="h-[220px] w-full rounded-2xl border border-dashed border-indigo-300/35" />
         </div>
       </section>
       <section className="bg-[#080d1d] py-20 sm:py-28">
