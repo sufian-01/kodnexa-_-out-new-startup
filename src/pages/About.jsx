@@ -18,9 +18,9 @@ const founders = [
     name: 'Md Mozammil',
     role: 'Founder & Chief Executive Officer (CEO)',
     image: founderTwo,
-    linkedin: 'https://www.linkedin.com/in/mmozammil',
+    linkedin: 'https://www.linkedin.com/in/mmozammil/',
     imageClass: 'object-contain object-center',
-    bio: 'Md Mozammil is the Founder & CEO of kodnexus, leading the company\'s vision, business strategy, and global partnerships. He focuses on helping startups, agencies, and businesses build AI-powered solutions, scalable web applications, SaaS platforms, and custom software. His primary focus is business growth, client relationships, strategic partnerships, and expanding kodnexus into a trusted global technology company.',
+    bio: 'Md Mozammil is the Founder & Chief Executive Officer (CEO) of kodnexus, leading the company\'s vision, business strategy, and global partnerships. He focuses on helping startups, agencies, and businesses build AI-powered solutions, scalable web applications, SaaS platforms, and custom software. His primary focus is business growth, client relationships, strategic partnerships, and expanding kodnexus into a trusted global technology company.',
   },
   {
     name: 'Habiba Shahid',

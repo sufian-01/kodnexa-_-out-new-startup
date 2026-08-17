@@ -17,11 +17,12 @@ const benefits = [['Real Startup Experience', Briefcase], ['Hands-on Learning', 
 
 function RoleCard({ role, featured = false }) {
   const Icon = roleIcons[role.title] || Briefcase
+  const isClosed = role.status === 'Closed'
   return (
     <Card className={`group relative h-full p-6 ${featured ? 'border-indigo-400/70 shadow-glow' : ''}`}>
       <div className="flex items-start justify-between gap-4">
         <span className="grid h-12 w-12 place-items-center rounded-xl bg-indigo/15 text-indigo-300 transition group-hover:scale-110 group-hover:bg-indigo group-hover:text-white"><Icon className="h-6 w-6" /></span>
-        <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300">{role.status}</span>
+        <span className={`rounded-full px-3 py-1 text-xs font-bold ${isClosed ? 'bg-rose-400/10 text-rose-300' : 'bg-emerald-400/10 text-emerald-300'}`}>{role.status}</span>
       </div>
       <h3 className="mt-7 font-display text-xl text-white">{role.title}</h3>
       <p className="mt-3 text-sm leading-6 text-slate-400">{role.summary}</p>
@@ -31,7 +32,9 @@ function RoleCard({ role, featured = false }) {
         <span className="inline-flex items-center gap-1 rounded-lg border border-white/10 bg-white/[.035] px-3 py-1.5">{role.compensation}</span>
       </div>
       <div className="mt-5 flex flex-wrap gap-2">{role.skills.map(skill => <span key={skill} className="rounded-lg bg-indigo/10 px-3 py-1.5 text-xs text-indigo-100">{skill}</span>)}</div>
-      <Button href={`/opportunities/${role.slug}`} className="mt-7 w-full">View Details</Button>
+      <button type="button" disabled className="mt-7 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[.04] px-5 py-3 text-sm font-semibold text-slate-500 opacity-75">
+        View Details
+      </button>
     </Card>
   )
 }

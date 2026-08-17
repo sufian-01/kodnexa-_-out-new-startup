@@ -2,13 +2,13 @@ const email = 'info@kodnexus.com'
 const phone = '+91 9135738848'
 const address = 'Jaitpur, khadda colony, New Delhi 110044'
 
-const founderResponse = `kodnexus was founded by Mohammad Sufian (AI Engineer) and Md Mozammil (Software Engineer).
+const founderResponse = `kodnexus was founded by Mohammad Sufian (AI Engineer) and Md Mozammil, Founder & Chief Executive Officer (CEO).
 
 Together they are building AI-powered products, automation systems, enterprise software solutions and technology-focused learning experiences.`
 
 const sufianBio = `Mohammad Sufian is an AI Engineer passionate about Generative AI, Agentic AI, intelligent automation and modern AI solutions. He specializes in building scalable AI products, AI agents and automation systems that solve real-world business problems. His vision is to make advanced AI practical, accessible and impactful for startups, educational institutions and enterprises.`
 
-const mozammilBio = `Md Mozammil is a Software Engineer specializing in scalable web applications, full-stack development and modern software architecture. He focuses on developing reliable digital products with clean engineering practices while transforming innovative ideas into production-ready software solutions.`
+const mozammilBio = `Md Mozammil is the Founder & Chief Executive Officer (CEO) of kodnexus. His official LinkedIn profile is https://www.linkedin.com/in/mmozammil/.`
 
 const greeting = `Hello! 👋
 

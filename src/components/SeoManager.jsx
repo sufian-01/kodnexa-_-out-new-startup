@@ -4,6 +4,8 @@ import { openOpportunities } from '../data/opportunities'
 
 const SITE_URL = 'https://kodnexus.com'
 const SITE_NAME = 'kodnexus'
+const MD_MOZAMMIL_ID = `${SITE_URL}/about#md-mozammil`
+const MD_MOZAMMIL_LINKEDIN = 'https://www.linkedin.com/in/mmozammil/'
 
 const organization = {
   '@type': 'Organization',
@@ -31,12 +33,7 @@ const organization = {
       jobTitle: 'Co-Founder & Chief Technology Officer (CTO)',
       url: 'https://www.linkedin.com/in/mohammad-sufian-08077a2b8',
     },
-    {
-      '@type': 'Person',
-      name: 'Md Mozammil',
-      jobTitle: 'Founder & Chief Executive Officer (CEO)',
-      url: 'https://www.linkedin.com/in/mmozammil',
-    },
+    { '@id': MD_MOZAMMIL_ID },
     {
       '@type': 'Person',
       name: 'Habiba Shahid',
@@ -44,6 +41,16 @@ const organization = {
       url: 'https://www.linkedin.com/in/habiba-shahid-5ab717325/',
     },
   ],
+}
+
+const mdMozammil = {
+  '@type': 'Person',
+  '@id': MD_MOZAMMIL_ID,
+  name: 'Md Mozammil',
+  jobTitle: 'Founder & Chief Executive Officer (CEO)',
+  url: `${SITE_URL}/about`,
+  sameAs: [MD_MOZAMMIL_LINKEDIN],
+  worksFor: { '@id': `${SITE_URL}/#organization` },
 }
 
 const website = {
@@ -118,6 +125,7 @@ function setStructuredData(page) {
     '@context': 'https://schema.org',
     '@graph': [
       organization,
+      mdMozammil,
       website,
       {
         '@type': 'WebPage',
