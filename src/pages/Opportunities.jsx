@@ -63,7 +63,7 @@ export default function Opportunities() {
           </motion.div>
           <motion.div initial={{ opacity: 0, x: 24 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .8, delay: .2 }}>
             <div className="relative aspect-[16/9] min-h-0 overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))] shadow-glow lg:aspect-auto lg:min-h-[460px]">
-              <img src={opportunitiesHero} alt="Developers collaborating in an AI startup workspace" className="absolute inset-0 h-full w-full object-contain lg:object-cover" />
+              <img src={opportunitiesHero} alt="Developers collaborating in an AI startup workspace" fetchPriority="high" decoding="async" className="absolute inset-0 h-full w-full object-contain lg:object-cover" />
               <div className="absolute inset-0 bg-gradient-to-tr from-ink/55 via-transparent to-indigo/20" />
             </div>
           </motion.div>

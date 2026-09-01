@@ -9,6 +9,7 @@ export const COLORS = {
 export const NAVIGATION = [
   { label: 'Home', path: '/' },
   { label: 'Services', path: '/services' },
+  { label: 'Products', path: '/#products' },
   { label: 'Hackathon', path: '/hackathon' },
   { label: 'About', path: '/about' },
   { label: 'Contact', path: '/contact' },

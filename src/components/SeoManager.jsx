@@ -57,29 +57,45 @@ const website = {
   '@type': 'WebSite',
   '@id': `${SITE_URL}/#website`,
   name: SITE_NAME,
+  alternateName: 'Kodnexus AI Solutions',
   url: `${SITE_URL}/`,
+  description: 'AI solutions, business automation, software development and practical technology learning from kodnexus in New Delhi, India.',
   publisher: { '@id': `${SITE_URL}/#organization` },
+}
+
+const professionalService = {
+  '@type': 'ProfessionalService',
+  '@id': `${SITE_URL}/#professional-service`,
+  name: 'kodnexus AI Solutions and Software Development',
+  url: `${SITE_URL}/services`,
+  parentOrganization: { '@id': `${SITE_URL}/#organization` },
+  areaServed: [{ '@type': 'Country', name: 'India' }, { '@type': 'City', name: 'New Delhi' }],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'kodnexus services',
+    itemListElement: ['AI Solutions', 'Software Development', 'Automation', 'Hackathons', 'Training', 'Placement Support'].map((name) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name } })),
+  },
 }
 
 const pages = {
   '/': {
-    title: 'kodnexus - Intelligence, in motion.',
-    description: 'kodnexus builds AI solutions, automation and learning experiences for ambitious teams.',
+    title: 'AI Solutions, Automation & Software Development | kodnexus',
+    description: 'kodnexus builds AI solutions, business automation, AI software and practical learning experiences for ambitious teams in India and beyond.',
     path: '/',
   },
   '/about': {
-    title: 'About kodnexus - Leadership, Mission and Vision',
-    description: 'Learn about kodnexus, its mission, vision, story and leadership team building AI solutions, software products and learning experiences.',
+    title: 'About kodnexus | AI Solutions, Software & Automation Team',
+    description: 'Meet the kodnexus leadership team building practical AI solutions, AI automation, software products and learning experiences from New Delhi, India.',
     path: '/about',
   },
   '/services': {
     title: 'Services - AI Solutions, Software Development and Automation | kodnexus',
-    description: 'Explore kodnexus services including AI solutions, software development, automation, hackathons, training and placement support.',
+    description: 'Explore kodnexus AI solutions, AI agents, RAG chatbot development, business automation, software and SaaS development, training and placement support.',
     path: '/services',
   },
   '/hackathon': {
     title: 'AI Hackathons - kodnexus Labs',
-    description: 'Discover kodnexus AI hackathons, build days, mentors, judges and practical prototype-building experiences for curious builders.',
+    description: 'Discover kodnexus AI hackathons and build days for students, professionals and teams to prototype practical AI software and automation ideas.',
     path: '/hackathon',
   },
   '/opportunities': {
@@ -89,7 +105,7 @@ const pages = {
   },
   '/contact': {
     title: 'Contact kodnexus - Start a Conversation',
-    description: 'Contact kodnexus for AI solutions, software development, automation, hackathons, training and technology partnerships.',
+    description: 'Contact kodnexus in New Delhi for AI solutions, AI automation, AI software development, workflow automation, SaaS development and technology partnerships.',
     path: '/contact',
   },
 }
@@ -127,6 +143,7 @@ function setStructuredData(page) {
       organization,
       mdMozammil,
       website,
+      professionalService,
       {
         '@type': 'WebPage',
         '@id': `${url}#webpage`,

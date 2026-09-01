@@ -49,7 +49,7 @@ export default function Hackathon() {
       </section>
       <section className="bg-[#080d1d] py-20 sm:py-28">
         <div className="section-shell grid gap-7 lg:grid-cols-[1.15fr_.85fr]">
-          <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]"><img src={hackathonImage} alt="kodnexus hackathon" className="absolute inset-0 h-full w-full object-cover" /></div>
+          <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]"><img src={hackathonImage} alt="kodnexus hackathon" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" /></div>
           <div className="rounded-2xl border border-indigo-400/25 bg-indigo/10 p-7"><p className="text-sm font-semibold text-cyan">kodnexus AI Hackathon 2026</p><h2 className="mt-3 font-display text-3xl text-white">Build with AI. Ship something real.</h2><Countdown target={HACKATHON_DATE} className="mt-7" /><Button onClick={() => setOpen(true)} className="mt-7 w-full">Register now</Button></div>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function Hackathon() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {guides.map(([name, role, image]) => (
             <article key={name} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[.03]">
-              <img src={image} alt={name} width="600" height="600" className="aspect-square min-h-[170px] w-full border-b border-white/10 object-cover object-top" />
+              <img src={image} alt={name} width="600" height="600" loading="lazy" decoding="async" className="aspect-square min-h-[170px] w-full border-b border-white/10 object-cover object-top" />
               <div className="p-5"><h3 className="font-display text-lg text-white">{name}</h3><p className="mt-1 text-sm text-indigo-300">{role}</p></div>
             </article>
           ))}

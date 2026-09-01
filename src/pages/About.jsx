@@ -61,7 +61,7 @@ export default function About() {
       <section className="bg-[#080d1d] py-20 sm:py-28">
         <div className="section-shell grid gap-10 lg:grid-cols-[.9fr_1.1fr]">
           <div className="relative min-h-[320px] overflow-hidden rounded-2xl border border-dashed border-indigo-300/35 bg-[linear-gradient(135deg,rgba(99,102,241,.14),rgba(6,182,212,.05))]">
-            <img src={storyImage} alt="kodnexus team collaborating in a modern technology workspace" className="absolute inset-0 h-full w-full object-cover opacity-70" />
+            <img src={storyImage} alt="kodnexus team collaborating in a modern technology workspace" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-70" />
           </div>
           <div>
             <span className="eyebrow">Our story</span>
@@ -85,7 +85,7 @@ export default function About() {
             <article key={name} className="overflow-hidden rounded-2xl border border-white/10 bg-white/[.03]">
               <div className="relative overflow-hidden border-b border-white/10 bg-[#070b18] p-4 sm:p-5">
                 <div className="relative aspect-[3/4] min-h-[420px] overflow-hidden rounded-[1.35rem] border border-white/10 bg-[#0b1020]">
-                  <img src={image} alt={name} className={`h-full w-full ${imageClass ?? 'object-cover object-center'}`} />
+                  <img src={image} alt={name} loading="lazy" decoding="async" className={`h-full w-full ${imageClass ?? 'object-cover object-center'}`} />
                 </div>
               </div>
               <div className="p-5">

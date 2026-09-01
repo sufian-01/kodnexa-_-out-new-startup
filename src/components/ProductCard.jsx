@@ -1,0 +1,9 @@
+import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { motion } from 'framer-motion'
+
+export default function ProductCard({ product, onSelect, index }) {
+  const Icon = product.icon
+  return <motion.article role="button" tabIndex={0} onClick={() => onSelect(product)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); onSelect(product) } }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: .15 }} whileHover={{ y: -7 }} transition={{ delay: index * .06 }} className="group flex h-full cursor-pointer flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-white/[.06] to-white/[.015] p-7 shadow-card transition hover:border-indigo-400/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan">
+    <div className="flex items-start justify-between gap-4"><span className="grid h-12 w-12 place-items-center rounded-xl bg-indigo/15 text-indigo-300 transition group-hover:scale-110 group-hover:bg-indigo group-hover:text-white"><Icon className="h-6 w-6" /></span><span className="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[10px] font-bold tracking-[.14em] text-cyan-200">COMING SOON</span></div><p className="mt-6 text-[10px] font-semibold uppercase tracking-[.15em] text-cyan">{product.category}</p><h3 className="mt-2 font-display text-xl font-medium text-white">{product.name}</h3><p className="mt-3 text-sm leading-6 text-slate-400">{product.summary}</p><ul className="mt-6 space-y-2.5 text-xs text-slate-300">{product.highlights.map(item => <li key={item} className="flex gap-2"><CheckCircle2 className="h-4 w-4 shrink-0 text-cyan" />{item}</li>)}</ul><span className="mt-auto inline-flex items-center gap-2 self-start pt-7 text-sm font-semibold text-indigo-300 transition group-hover:text-white">Explore Product <ArrowRight className="h-4 w-4" /></span>
+  </motion.article>
+}

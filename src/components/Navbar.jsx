@@ -29,6 +29,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', listener)
   }, [])
 
+  const navigate = (event, path) => {
+    setOpen(false)
+    if (!path.startsWith('/#') || pathname !== '/') return
+    event.preventDefault()
+    document.querySelector(path.slice(1))?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled ? 'border-b border-white/10 bg-ink/85 py-3 backdrop-blur-xl' : 'py-5'}`}>
       <motion.div className="absolute bottom-0 left-0 h-px bg-gradient-to-r from-indigo via-violet to-cyan" animate={{ width: `${progress}%` }} transition={{ duration: .12 }} />
@@ -36,7 +43,7 @@ export default function Navbar() {
         <a href="/" aria-label="kodnexus home"><Logo /></a>
         <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
           {NAVBAR_ITEMS.map(({ label, path }) => (
-            <a key={path} href={path} aria-current={pathname === path ? 'page' : undefined} className={`text-sm font-medium transition hover:text-white ${pathname === path ? 'text-white' : 'text-slate-400'}`}>{label}</a>
+            <a key={path} href={path} onClick={event => navigate(event, path)} aria-current={pathname === path ? 'page' : undefined} className={`text-sm font-medium transition hover:text-white ${pathname === path ? 'text-white' : 'text-slate-400'}`}>{label}</a>
           ))}
         </nav>
         <div className="hidden lg:block"><Button href="/contact" className="px-4 py-2.5">Book a meeting</Button></div>
@@ -48,7 +55,7 @@ export default function Navbar() {
             <div className="glass rounded-2xl p-4">
               <a href="/" onClick={() => setOpen(false)} className="mb-2 block px-4"><Logo /></a>
               {NAVBAR_ITEMS.map(({ label, path }) => (
-                <a onClick={() => setOpen(false)} key={path} href={path} aria-current={pathname === path ? 'page' : undefined} className={`block rounded-lg px-4 py-3 text-sm font-medium hover:bg-white/5 hover:text-white ${pathname === path ? 'text-white' : 'text-slate-300'}`}>{label}</a>
+                <a onClick={event => navigate(event, path)} key={path} href={path} aria-current={pathname === path ? 'page' : undefined} className={`block rounded-lg px-4 py-3 text-sm font-medium hover:bg-white/5 hover:text-white ${pathname === path ? 'text-white' : 'text-slate-300'}`}>{label}</a>
               ))}
               <Button href="/contact" className="mt-2 w-full">Book a meeting</Button>
             </div>
